@@ -29,6 +29,12 @@ func SetupRouter() *gin.Engine {
 			books.PUT("/:id", Controllers.PutOneBook)
 			books.DELETE("/:id", Controllers.DeleteBook)
 		}
+
+		jokes := api.Group("/jokes")
+		{
+			jokes.GET("/", Controllers.ListJoke)
+			jokes.GET("/like/:jokeID", Controllers.LikeOneJoke)
+		}
 	}
 
 	return r
