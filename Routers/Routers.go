@@ -14,6 +14,8 @@ func SetupRouter() *gin.Engine {
 	api := r.Group("/api")
 	{
 		api.GET("", Controllers.GetHome)
+		api.GET("welcome", Controllers.Welcome)
+		api.GET("hello", Controllers.Hello)
 
 		bottles := api.Group("/bottle")
 		{
@@ -30,10 +32,13 @@ func SetupRouter() *gin.Engine {
 			books.DELETE("/:id", Controllers.DeleteBook)
 		}
 
-		jokes := api.Group("/jokes")
+		jokes := api.Group("/joke")
 		{
-			jokes.GET("/", Controllers.ListJoke)
-			jokes.GET("/like/:jokeID", Controllers.LikeOneJoke)
+			jokes.GET("", Controllers.ListJoke)
+			jokes.POST("", Controllers.AddNewJoke)
+			jokes.GET("/:id", Controllers.GetOneJoke)
+			jokes.PUT("/:id", Controllers.PutOneJoke)
+			jokes.DELETE("/:id", Controllers.DeleteJoke)
 		}
 	}
 
