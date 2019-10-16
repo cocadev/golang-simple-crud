@@ -31,6 +31,7 @@ func AddNewJoke(c *gin.Context) {
 func GetOneJoke(c *gin.Context) {
 	id := c.Params.ByName("id")
 	var joke Models.Joke
+
 	err := Models.GetOneJoke(&joke, id)
 	if err != nil {
 		ApiHelpers.RespondJSON(c, 404, joke)

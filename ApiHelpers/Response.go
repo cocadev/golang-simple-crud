@@ -15,7 +15,10 @@ func RespondJSON(w *gin.Context, status int, payload interface{}) {
 	var res ResponseData
 
 	res.Status = status
-	res.Data = payload
 
-	w.JSON(200, res)
+	if ( status < 300 ) {
+		res.Data = payload
+	}
+
+	w.JSON(status, res)
 }
