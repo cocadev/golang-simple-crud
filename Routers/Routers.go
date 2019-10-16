@@ -1,7 +1,6 @@
 package Routers
 
 import (
-	"net/http"
 	"../Controllers"
 	"github.com/gin-gonic/contrib/static"
 	"github.com/gin-gonic/gin"
@@ -14,11 +13,7 @@ func SetupRouter() *gin.Engine {
 
 	api := r.Group("/api")
 	{
-		api.GET("", func(c *gin.Context) {
-			c.JSON(http.StatusOK, gin.H {
-			  "message": "Thanks my go api",
-			})
-		})
+		api.GET("", Controllers.GetHome)
 
 		bottles := api.Group("/bottle")
 		{
