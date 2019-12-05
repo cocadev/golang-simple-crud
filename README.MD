@@ -9,8 +9,9 @@
   <br><br>
 </h1>
 <kbd>
-    <img src="https://image.prntscr.com/image/bi8KveEwSdCJIKK00QXDzw.png" alt="Animavita" height="525" width="725">
-  </kbd>
+	<img src="https://image.prntscr.com/image/bi8KveEwSdCJIKK00QXDzw.png" alt="Animavita" height="300" width="525">
+</kbd>
+<br/>
 # Api go simple
 It is a just simple RESTful API with Go using:
 1. **Gin Framework**
