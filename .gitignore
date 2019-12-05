@@ -4,3 +4,5 @@ gin-bin.exe
 
 /src
 .vscode
+/pkg
+/bin
