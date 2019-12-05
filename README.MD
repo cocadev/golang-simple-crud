@@ -9,7 +9,7 @@
   <br><br>
 </h1>
 <kbd>
-	<img src="https://image.prntscr.com/image/bi8KveEwSdCJIKK00QXDzw.png" alt="Animavita" height="525" width="250">
+	<img src="https://image.prntscr.com/image/bi8KveEwSdCJIKK00QXDzw.png" alt="Animavita" height="525" width="300">
 </kbd>
 <br/>
 # Api go simple
