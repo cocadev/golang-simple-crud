@@ -9,7 +9,7 @@
   <br><br>
 </h1>
 <kbd>
-    <img src="https://prnt.sc/q6r7ei" alt="Animavita" height="525" width="725">
+    <img src="https://image.prntscr.com/image/bi8KveEwSdCJIKK00QXDzw.png" alt="Animavita" height="525" width="725">
   </kbd>
 # Api go simple
 It is a just simple RESTful API with Go using:
