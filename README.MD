@@ -1,4 +1,4 @@
-<h1 align="center"><b> Golang Backend</b> </h1>
+<h1 align="center"><b> Golang Backend For Simple CRUD</b> </h1>
 
 <kbd>
 	<img src="https://image.prntscr.com/image/bi8KveEwSdCJIKK00QXDzw.png" alt="Animavita" height="400" width="300">
