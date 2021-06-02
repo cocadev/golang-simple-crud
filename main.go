@@ -21,6 +21,5 @@ func main() {
 	Config.DB.AutoMigrate(&Models.Book{})
 
 	r := Routers.SetupRouter()
-	// running
 	r.Run(":8080")
 }
